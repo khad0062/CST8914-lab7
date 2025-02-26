@@ -24,8 +24,11 @@ body {
 a{
   color: #006b3a;
 }
+
+
 main a: focus{
-  outline: 2px solid #006b3a;  <!--  Restore visible focus indicator for links in main -->
+   outline: 0.5rem solid #25aa00;
+  border-radius: 5px;                     <!--  Restore visible focus indicator for links in main -->
 }
 
 
@@ -291,7 +294,7 @@ article p {
     <div class="container">
       <h3>Like the Funion? Consider joining our newsletter!</h3>
       <input type="text" aria-label="Join the newsletter using email"> <!-- Added aria-label for more accessibility -->
-      <button type="button" onfocus="getFocus()">Sign up</button></div>
+      <button type="button" onclick="getFocus()">Sign up</button></div>  <!-- Change onfocus to onclick, not to open the new window while using tab -->
       
     </div>
 </div>

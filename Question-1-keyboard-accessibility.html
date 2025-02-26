@@ -304,7 +304,11 @@ article p {
   
   <script>
     function getFocus() {
-      window.open('https://aidaform.com/templates/thank-you-page-with-redirects.html','mywindow').focus()
+      const newWindow = window.open('https://aidaform.com/templates/thank-you-page-with-redirects.html','mywindow').focus()
+if (newWindow) {
+  newWindow.focus();
+}
+
     }
     </script>
 </body>

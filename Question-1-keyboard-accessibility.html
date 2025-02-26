@@ -27,8 +27,7 @@ a{
 main a: focus{
   outline: 2px solid #006b3a;  <!--  Restore visible focus indicator for links in main -->
 }
-button: focus {
-  outline: 2px solid #006b3a;  <!-- Ensure buttons have visible focus indicators-->
+
 
 h2 {
   margin-top: 0;
@@ -304,11 +303,10 @@ article p {
   
   <script>
     function getFocus() {
-      const newWindow = window.open('https://aidaform.com/templates/thank-you-page-with-redirects.html','mywindow').focus()
+      const newWindow = window.open('https://aidaform.com/templates/thank-you-page-with-redirects.html','mywindow');
 if (newWindow) {
   newWindow.focus();
 }
-
     }
     </script>
 </body>

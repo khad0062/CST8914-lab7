@@ -24,8 +24,8 @@ body {
 a{
   color: #006b3a;
 }
-main a{
-  outline: none;
+main a: focus{
+  outline: 2px solid #006b3a;<!--  Restore visible focus indicator for links in main -->
 }
 h2 {
   margin-top: 0;
@@ -209,7 +209,9 @@ article p {
         <a href="#">Business</a>  <!-- Remove the tabindex=-1 to make the element tab focusable -->
         <a href="#">Entertainment</a>
         <a href="#">Sports</a>
-        <a href="#" class="btn-search pull-right"><img src="https://raw.githubusercontent.com/udacity/ud891/2de2a0688c68809a3b453db3a24b1a59e8401459/lesson2-focus/02-dom-order/images/search.svg" alt="Search" />Search</a> 
+        <button class="btn-search pull-right"><img src="https://raw.githubusercontent.com/udacity/ud891/2de2a0688c68809a3b453db3a24b1a59e8401459/lesson2-focus/02-dom-order/images/search.svg" alt="Search" />Search</button>
+<!--  Replaced <a> with <button> since this is an action, not a navigation link. -->
+
 
       </nav>
     </div>
